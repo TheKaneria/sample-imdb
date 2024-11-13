@@ -1,0 +1,77 @@
+.header {
+  padding: 0.5rem 1rem;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.headerLeft,
+.headerRight {
+  display: flex;
+  align-items: center;
+}
+
+a > span {
+  margin: 0 30px;
+  font-size: 1.3rem;
+  cursor: pointer;
+  color: white;
+}
+
+a > span:hover {
+  color: red;
+}
+
+.header_icon {
+  width: 80px;
+  cursor: pointer;
+}
+
+.user__avatar {
+  font-size: 2rem;
+}
+.menuIcon {
+  display: none;
+  transition: all 0.5s ease-in-out;
+}
+
+.responsive_div {
+  max-height: 0;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.223);
+  margin: 0 auto;
+  display: flex;
+  transition: all 0.5s ease-in-out;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 2rem;
+  /* padding-bottom: 1rem; */
+}
+
+.responsive_div.open {
+  max-height: 500px;
+  /* background-color: white; */
+  padding-bottom: 20px;
+}
+
+.inputtext {
+  height: 35px;
+  width: 300px;
+  padding: 0 5px;
+  font-size: 17px;
+  color: red;
+}
+.inputtext:focus {
+  border: none;
+  outline: none; /* also removes the outline */
+}
+
+@media only screen and (max-width: 768px) {
+  .menuIcon {
+    display: block;
+    font-size: 30px;
+  }
+  .headerRight {
+    display: none;
+  }
+}

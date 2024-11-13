@@ -1,0 +1,33 @@
+.movie_list {
+  padding: 0 3rem 3rem 3rem;
+}
+
+.list_title {
+  font-size: 1.75rem;
+  margin: 2.5rem;
+}
+
+.list_cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .movie_list {
+    padding: 0;
+  }
+
+  .list_title {
+    font-size: 1.5rem;
+    /* margin: 2.5rem; */
+  }
+
+  .list_cards {
+    display: flex;
+    /* flex-direction: column; */
+    width: 100%;
+    overflow: scroll;
+    min-height: 400px;
+  }
+}
