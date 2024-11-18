@@ -1,7 +1,7 @@
 {
   "name": "imdb-front",
   "version": "0.1.0",
-  "homepage": "https://TheKaneria.github.io/react-imdb",
+  "homepage": "https://TheKaneria.github.io/sample-imdb",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.13.0",
