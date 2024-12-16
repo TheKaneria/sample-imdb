@@ -17,6 +17,7 @@ const Header = () => {
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/6/69/IMDB_Logo_2016.svg"
               className="header_icon"
+              alt=""
             />
           </Link>
           <div className="mx-3 d-none d-md-block">

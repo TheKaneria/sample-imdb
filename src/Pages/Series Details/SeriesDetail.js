@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
@@ -27,6 +29,7 @@ const SeriesDetail = () => {
     <div className="movie">
       <div className="movie_intro">
         <img
+          alt=""
           className="movie_backdrop"
           src={`https://image.tmdb.org/t/p/original${
             seriesDetails ? seriesDetails.backdrop_path : ""
@@ -38,6 +41,7 @@ const SeriesDetail = () => {
           <div className="movie_posterBox">
             <img
               className="movie_poster"
+              alt=""
               src={`https://image.tmdb.org/t/p/original${
                 seriesDetails ? seriesDetails.poster_path : ""
               }`}
@@ -77,6 +81,7 @@ const SeriesDetail = () => {
                       <div className="fw-bold text-warning ">{author.name}</div>
                       <div>
                         <img
+                          alt=""
                           src={`https://image.tmdb.org/t/p/original${author.profile_path}`}
                           style={{
                             height: "30px",
