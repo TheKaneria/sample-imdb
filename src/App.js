@@ -7,6 +7,11 @@ import MovieDetail from "./Pages/Movie Details/MovieDetail";
 import ErrorPage from "./Pages/Error/ErrorPage";
 import BootStrap from "./Pages/Bootstrap/BootStrap";
 import SeriesDetail from "./Pages/Series Details/SeriesDetail";
+import ReactGA from "react-ga4";
+
+const trackingID = "G-E6FXZS62HG";
+ReactGA.initialize(trackingID);
+ReactGA.send({ hitType: "pageview", page: window.location.pathname });
 
 function App() {
   return (
