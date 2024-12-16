@@ -4,7 +4,8 @@ import "./index.css";
 import App from "./App";
 import ReactGA from "react-ga4";
 
-ReactGA.initialize("G-LEKFWNJE4L");
+ReactGA.initialize("G-E6FXZS62HG");
+ReactGA.send({ hitType: "pageview", page: window.location.pathname });
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
