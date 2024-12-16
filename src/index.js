@@ -4,7 +4,7 @@ import "./index.css";
 import App from "./App";
 import ReactGA from "react-ga4";
 
-ReactGA.initialize("your GA measurement id");
+ReactGA.initialize("G-LEKFWNJE4L");
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
