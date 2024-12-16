@@ -8,12 +8,13 @@ import ErrorPage from "./Pages/Error/ErrorPage";
 import BootStrap from "./Pages/Bootstrap/BootStrap";
 import SeriesDetail from "./Pages/Series Details/SeriesDetail";
 import ReactGA from "react-ga4";
-
-const trackingID = "G-E6FXZS62HG";
-ReactGA.initialize(trackingID);
-ReactGA.send({ hitType: "pageview", page: window.location.pathname });
+import { useEffect } from "react";
 
 function App() {
+  useEffect(() => {
+    ReactGA.initialize("G-JRQQ62SGC8");
+    ReactGA.send({ hitType: "pageview", page: window.location.pathname });
+  }, []);
   return (
     <div className="app">
       <BrowserRouter>
